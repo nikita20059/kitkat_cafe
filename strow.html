@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tital></tital>
+        <link rel="stylesheet" type="text/css" href="strow_css.css">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        @keyframes morph{
+            0%{ background-image:url('bk1.jpg');}
+            25%{ background-image:url('bk2.jpg');}
+            50%{ background-image:url('bk3.jpg');}
+            100%{ background-image:url('bk4.jpg');}
+            150%{ background-image:url('bk5.jpg');}
+            150%{ background-image:url('bk1.jpg');}
+        }
+        #demo{
+            width:1700px;
+            height:800px;
+            background-color:#eee;
+            animation:morph 8s linear 1s infinite;
+        }
+        </style>
+    <body>
+        <header>
+        <div id="demo">
+            <nav>
+                <div class="row clearfix">
+                    <img src="sau1.png" class="logo">
+
+                    <ul class="main-nav animated slideInDown" id="check-change">
+                        <li><a href="strow.html">HOME</a></li>
+                        <li><a href="menu_order.html">ORDER</a></li>
+                        <li><a href="about_us.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="sign_up.html">SIGN UP</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="main-content-header">
+                <h1>Welcome to  <span class="colorchenge"> KIT KAT CAFE</span>.<br>
+                    House of cafe lover</h1>
+                <a href="menu_card.php" class="btn btn-full">Menu</a>
+                <a href="login.php" class="btn btn-nav">Login</a>
+            </div>
+            </div>
+        </header>
+        <script type="text/javascript">
+        function slideshow(){
+            var x=document.getElementById('check-change');
+            if(x.style.display ==="none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+        }
+        </script>
+    </body>
+</html>

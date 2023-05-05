@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="sign_up_css.css">
+    </head>
+    <body>
+        <div class="loginbox">
+            <img src="contact1.png" class="avatar">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="table">
+                    <table class="table table-hover table-bordered" align="center">
+                            <tbody>
+                                <tr>
+                                    <th><h3>First Name </h3></th>
+                                    <th><input type="text" name="fname" required placeholder="First name"></th>
+                                    <th><h3>Last Name </h3></th>
+                                    <th><input type="text" name="lname" required placeholder="Last name"></th>
+                                </tr>
+                                <tr>
+                                    <th><h3>Email</h3></th>
+                                    <th><input id="emailAddress" type="email" required placeholder="Enter Email Id" pattern=".+@gmail.com"></th>
+                                    <th><h3>Phone no.</h3></th>
+                                    <th><input type="number" name="balloons"  minlength="10" required placeholder="Phone no.">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><h3>Password</h3></th>
+                                    <th><input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required></th>
+                                    <th><h3>Confirm Password</h3></th>
+                                    <th><input type="password" name="kname" placeholder="Confirm Password"></th>
+                                </tr>
+                            </tbody>
+                        
+                    </table><br>
+                    <input type="submit" name="sub" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
